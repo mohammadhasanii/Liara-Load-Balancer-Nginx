@@ -1,16 +1,13 @@
-
 # Liara-Load-Balancer-Nginx
 
 This container allows you to distribute all your requests in Liara.ir internal network between 2 copies of the application container on your server side
 
-
-
-
 ![Logo](https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/products/nginx/2020/nginx-product-icon-open-source_1100x481.jpg)
 
-
 ## Usage/Examples
+
 # nginx.conf
+
 ```conf
 
 user nginx;
@@ -74,23 +71,17 @@ http {
 ```
 
 # Dockerfile
+
 ```conf
 
 FROM nginx
 
 COPY nginx.conf /etc/nginx/nginx.conf
 
-
 ```
 
-
-
-
 ## Deploy to Liara.ir
-
-
 
 ```bash
   liara deploy --platform=docker --port=80
 ```
-    
